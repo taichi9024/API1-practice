@@ -1,0 +1,2 @@
+module FugesHelper
+end

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fuges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fuges.each do |fuge| %>
+      <tr>
+        <td><%= fuge.title %></td>
+        <td><%= fuge.body %></td>
+        <td><%= link_to 'Show', fuge %></td>
+        <td><%= link_to 'Edit', edit_fuge_path(fuge) %></td>
+        <td><%= link_to 'Destroy', fuge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fuge', new_fuge_path %>
+<%= javascript_include_tag 'hello' %>

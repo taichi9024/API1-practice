@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @fuge.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @fuge.body %>
+</p>
+
+<%= link_to 'Edit', edit_fuge_path(@fuge) %> |
+<%= link_to 'Back', fuges_path %>
